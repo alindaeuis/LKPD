@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kode unik karyawan</title>
+</head>
+<body>
+    <script>
+        let pegawai = 32604200802;
+        let bilangan = Math.floor(pegawai / 10000000000);
+        let tgl = Math.floor(pegawai / 100000000) % 100;
+        let bln = Math.floor(pegawai / 1000000) % 100;
+        let thn = Math.floor(pegawai / 100) % 10000;
+        let noUrut = Math.floor(pegawai % 100) / 10;
+
+        // let pegawai = 22505197803
+        // let noUrut = pegawai % 100
+        // let thn = Math.floor (pegawai/100)%10000
+        // let bln = Math.floor (pegawai/1000000)%100
+        // let tgl = Math.floor (pegawai/100000000)%100
+        // let bilangan = Math.floor (pegawai/10000000000)
+
+        
+        switch(bln) {
+            case 1: bln = 'januari'; break;
+            case 2: bln = 'februari'; break;
+            case 3: bln = 'maret'; break;
+            case 4: bln = 'april'; break;
+            case 5: bln = 'mei'; break;
+            case 6: bln = 'juni'; break;
+            case 7: bln = 'juli';break;
+            case 8: bln = 'agustus'; break;
+            case 9: bln = 'september'; break;
+            case 10: bln = 'oktober'; break;
+            case 11: bln = 'november'; break;
+            case 12: bln = 'desember'; break;
+        };
+
+
+        console.log(`${bilangan}${tgl}${bln}${thn}${noUrut}`);
+
+    </script>
+</body>
+</html>

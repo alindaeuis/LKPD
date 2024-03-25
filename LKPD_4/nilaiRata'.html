@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nilai Rata-rata</title>
+</head>
+<body>
+    <script>
+        let PABP = 70;
+        let mtk = 82;
+        let dpk = 77;
+        let nilaiRataRata = Math.floor((PABP + mtk + dpk) / 3);
+
+        if(nilaiRataRata >= 80 && nilaiRataRata <= 100) {
+            console.log(`${nilaiRataRata} = A`);
+        }else if(nilaiRataRata >= 75 && nilaiRataRata < 80) {
+            console.log(`${nilaiRataRata} = B`);
+        }else if(nilaiRataRata >= 65 && nilaiRataRata < 75) {
+            console.log(`${nilaiRataRata} = C`);
+        }else if(nilaiRataRata >= 45 && nilaiRataRata < 65 ) {
+            console.log(`${nilaiRataRata} = D`);
+        }else if(nilaiRataRata >= 0 && nilaiRataRata < 45) {
+            console.log(`${nilaiRataRata} = E`);
+        }else {
+            console.log(`${nilaiRataRata} = K`);
+        }
+    </script>
+</body>
+</html>

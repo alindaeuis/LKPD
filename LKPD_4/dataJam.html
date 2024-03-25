@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Jam</title>
+</head>
+<body>
+    <script>
+        const waktuAwal1 = '02:13:23';
+        const waktuAwal2 = '02:13:59';
+        const waktuAwal3 = '02:59:59';
+        const waktuAwal4 = '23:59:59';
+    
+        const tambahDetik = (waktuString) => {
+            const [jam, menit, detik] = waktuString.split(':').map(Number);
+            let totalDetik = (jam * 3600) + (menit * 60) + detik;
+            totalDetik = (totalDetik + 1) % (24 * 3600);
+            const jamBaru = Math.floor(totalDetik /3600);
+            const menitBaru = Math.floor((totalDetik % 3600) / 60);
+            const detikBaru = totalDetik % 60;
+
+            return [
+                String(jamBaru).padStart(2, '0'),
+                String(menitBaru).padStart(2, '0'),
+                String(detikBaru).padStart(2, '0')
+        ].join(":");  
+
+
+        };
+
+    const waktuBaru1 = tambahDetik(waktuAwal1);
+    const waktuBaru2 = tambahDetik(waktuAwal2);
+    const waktuBaru3 = tambahDetik(waktuAwal3);
+    const waktuBaru4 = tambahDetik(waktuAwal4);
+
+        
+    console.log(`Waktu setelah ditambah 1 detik dari ${waktuAwal1}: ${waktuBaru1}`);
+    console.log(`Waktu setelah ditambah 1 detik dari ${waktuAwal2}: ${waktuBaru2}`);
+    console.log(`Waktu setelah ditambah 1 detik dari ${waktuAwal3}: ${waktuBaru3}`);
+    console.log(`Waktu setelah ditambah 1 detik dari ${waktuAwal4}: ${waktuBaru4}`);
+
+
+
+    </script>
+</body>
+</html>

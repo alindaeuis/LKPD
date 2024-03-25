@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mencari bilangan terbesar, terkecil, dan rata-rata</title>
+</head>
+<body>
+    <script>
+        let total = 0;
+        let bilTerbesar = -Infinity;
+        let bilTerkecil = Infinity;
+
+        for(i = 0; i <= 20; i++) {
+            let input = parseFloat(prompt(`masukkan bilangan ${i}`, ''));
+            total += input;
+
+            if(input > bilTerbesar) {
+                bilTerbesar = input;
+            }
+            if(input < bilTerkecil) {
+                bilTerkecil = input;
+            }
+
+        }
+
+        let rataRata = total / 20;
+
+        console.log(`bilangan terbesar: ${bilTerbesar}`);
+        console.log(`bilangan terkecil: ${bilTerkecil}`);
+        console.log(`rata-rata: ${rataRata}`);
+
+
+    </script>
+</body>
+</html>

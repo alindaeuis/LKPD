@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaji karyawan</title>
+</head>
+<body>
+    
+    <script>
+        let namaKaryawan = "nayla";
+        let gajiPokok = 20000000;
+
+        tunjangan = 20/100 * gajiPokok;
+        pajak = 15/100 * (gajiPokok + tunjangan);
+        gajiBersih = gajiPokok + tunjangan - pajak;
+
+        console.log(`gaji bersih karyawan dengan nama ${namaKaryawan} adalah Rp${gajiBersih}` );
+        console.log(`tunjangan dengan nama ${namaKaryawan} adalah Rp${tunjangan}` );
+        console.log(`pajak dengan nama ${namaKaryawan} adalah Rp${pajak}` );
+
+
+
+    </script>
+</body>
+</html>

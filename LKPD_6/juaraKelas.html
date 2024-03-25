@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mencari Juara Kelas</title>
+</head>
+<body>
+    <script>
+        // function siswa(nama, nilaiMtk, nilaiIndo, nilaiIngg, nilaiDpk, nilaiAgama, kehadiran) {
+        //     this.nama = nama;
+        //     this.nilaiMtk = nilaiMtk;
+        //     this.nilaiIndo = nilaiIndo;
+        //     this.nilaiIngg = nilaiIngg,
+        //     this.nilaiDpk = nilaiDpk;
+        //     this.nilaiAgama = nilaiAgama;
+        //     this.kehadiran = kehadiran;
+        // }
+
+        // function hitungRataRata() {
+        //     return(this.nilaiMtk + this.nilaiIndo + this.nilaiIngg + nilaiDpk + nilaiAgama) / 5;
+        // }
+
+        // function isJuara() {
+        //     if(hitungRataRata() >= 475 && this.kehadiran === 100) {
+
+        //     }
+        // }
+
+
+
+
+        let jumlahSiswa = 15;
+
+        function hitungRata2() {
+            return(nilaiMtk + nilaiIndo + nilaiIngg + nilaiDpk + nilaiAgama) / 5;
+        }
+
+        function cekJuara() {
+            let juaraKelas = '';
+            for(i = 0; i <= jumlahSiswa; i++) {
+                let nama = prompt('nama', '');
+                let nilaiMtk = prompt('nilaiMtk', '');
+                let nilaiIndo = prompt('nilaiIndo', '');
+                let nilaiIngg = prompt('nilaiIngg', '');
+                let nilaiDpk = prompt('nilaiDpk', '');
+                let nilaiAgama = prompt('nilaiAgama', '');
+                let kehadiran = prompt('persentase kehadiran')
+            }
+
+            let nilaiRata = hitungRata2(nilaiMtk, nilaiIndo, nilaiIngg, nilaiDpk, nilaiAgama);
+
+            if(nilaiRata >= 475 && kehadiran === 100){
+                juaraKelas = `siswa ke-${i}`
+            }
+
+            return juaraKelas;
+        }
+
+        let juara = cekJuara();
+
+        if(!juara !== 'tidak ada') {
+            console.log(`juara kelas adalah ${juaraKelas}`);
+        }else {
+            console.log('tidak ada juara kelas');
+        }
+
+
+        // function siswa(nama, nilaiMtk, nilaiIndo, nilaiIngg, nilaiDpk, nilaiAgama, kehadiran) {
+        //     this.nama = nama;
+        //     this.nilaiMtk = nilaiMtk;
+        //     this.nilaiIndo = nilaiIndo;
+        //     this.nilaiIngg = nilaiIngg;
+        //     this.nilaiDpk = nilaiDpk;
+        //     this.nilaiAgama = nilaiAgama;
+        //     this.kehadiran = kehadiran;
+        //     hitungRata2();
+        //     Juara();
+        // }
+
+        // function hitungRata2() {
+        //     return (this.nilaiMtk + this.nilaiIndo + this.nilaiIngg + this.nilaiDpk + nilaiAgama) / 5;
+        // }
+
+        // function Juara() {
+        //     return this.hitungRata2() >= 95 && this.kehadiran === 100;
+        // }
+
+        // const siswa = new siswa(prompt('masukkan nama siswa'));
+
+
+
+        // function Siswa(nama, nilaiRataRata, kehadiran, mataPelajaran) {
+        //     this.nama = nama;
+        //     this.nilaiRataRata = nilaiRataRata;
+        //     this.kehadiran = kehadiran;
+        //     this.mataPelajaran = mataPelajaran;
+        // }
+
+        // let jumlahSiswa = 15;
+
+    //     function dataSiswa() {
+    //     let nama = prompt('masukkan nama anda', '');
+    //     let mtk = prompt('nilai MTK', '');
+    //     let bIndo = prompt('nilai B.Indo', '');
+    //     let ingg = prompt('nilai ingg', '');
+    //     let dpk = prompt('nilai dpk', '');
+    //     let agama = prompt('nilai agama', '');
+    //     let kehadiran = prompt('persentase kehadiran', '');
+    // }
+
+    //     // let dataSiswa = [];
+    //     // let dataMataPelajaran = ['MTK', 'B.INDO', 'INGG', 'DPK', 'Agama'];
+
+    //     // dataSiswa.push(new Siswa('A', [90, 100, 85, 80, 95], 100, dataMataPelajaran));
+    //     // dataSiswa.push(new Siswa('B', [100, 100, 100, 100, 100], 100, dataMataPelajaran));
+
+    //     let juara = false;
+    //     let namaJuara = "";
+    //     for(let i=0; i< jumlahSiswa.length; i++) {
+    //         let totalNilaiRataRata = 0;
+    //         for(let j=0; j < dataSiswa(i).nilaiRataRata.length; j++) {
+    //             totalNilaiRataRata += dataSiswa().nilaiRataRata[j];
+    //         }
+    //         if(dataSiswa(i).nilaiRataRata.every(value => value === 100) && dataSiswa(i).kehadiran === 100 && totalNilaiRataRata >= 475) {
+    //             juara = true;
+    //             namaJuara = dataSiswa(i).nama;
+    //             break;
+    //         }
+    //     }
+
+    //     if(!juara) {
+    //         console.log('tidak ada juara kelas');
+    //     }else {
+    //         console.log("nama juara adalah", namaJuara);
+    //     }
+
+
+        
+    </script>
+</body>
+</html>
